@@ -56,41 +56,34 @@ class WeatherHomePage extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             const Text(
-              "30°C",
+              "28°C",
               style: TextStyle(fontSize: 80, color: Colors.blue),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
+            const Divider(thickness: 1),
+            const SizedBox(height: 20),
             const Text(
               "Sunny",
-              style: TextStyle(fontSize: 22, color: Colors.grey),
+              style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
             const SizedBox(height: 10),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.ac_unit, color: Colors.blue),
-                SizedBox(width: 5),
                 Text(
                   "5 km/h",
-                  style: TextStyle(fontSize: 18, color: Colors.blue),
+                  style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 107, 144, 155)),
                 ),
+                SizedBox(width: 5),
+                
               ],
             ),
             const SizedBox(height: 20),
-            const Divider(thickness: 1),
-            const SizedBox(height: 20),
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Next 10 days",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const SizedBox(height: 10),
             WeatherForecast(),
             const SizedBox(height: 20),
             const Text(
-              "Developed by: Yabuuu.id",
+              "Developed by: YabuuuTI.id",
               style: TextStyle(fontSize: 14, color: Color.fromARGB(255, 85, 85, 85)),
             ),
           ],
@@ -118,7 +111,13 @@ class WeatherForecast extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const Text(
+              "Next 10 days",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: forecastData
@@ -162,7 +161,7 @@ class WeatherColumn extends StatelessWidget {
         Text(windSpeed, style: const TextStyle(fontSize: 16, color: Color.fromARGB(255, 51, 67, 68))),
         const SizedBox(height: 5),
         const Icon(Icons.arrow_downward, color: Color.fromARGB(255, 248, 30, 30)),
-        const Text("0%", style: TextStyle(fontSize: 16,color : Color.fromARGB(255, 248, 30, 30))),
+        const Text("0%", style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 248, 30, 30))),
       ],
     );
   }
