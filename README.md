@@ -1,6 +1,4 @@
-# layoutcuaca
-
-A new Flutter module project.
+![screenshot](https://github.com/user-attachments/assets/9f3baa02-fd8d-4d7f-ab1a-7044b82f5ec9)
 
 ## Getting Started
 
